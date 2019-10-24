@@ -62,8 +62,7 @@ body, html, main {
   .bio {
       text-align: center;
       width: 75%;
-      margin-left: auto;
-      margin-right: auto;
+      z-index: 1;
   }
   
   .hanyu-mingzi {
@@ -72,7 +71,7 @@ body, html, main {
                skew(-20deg);
     float: right;
     writing-mode: vertical-lr;
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 200px;
     color: rgb(222, 41, 16);
     opacity: 0.2;    
@@ -85,14 +84,22 @@ body, html, main {
   }
 
   .sidebar-menu {
-      width: 200px;
-      border: 1p solid white;
+      width: 300px;
+      border-right: 1px solid white;
+      font-size: 30px;
+      margin-left: 50px;
+      letter-spacing: 2px;
   }
 
   .projects a {
       text-decoration: none;
       color: white;
       list-style-type: none;
+  }
+
+  .projects a:hover {
+      text-decoration: underline;
+      /*how to make underline thin?*/
   }
 
 @media screen and (min-width: 320px) {
@@ -102,9 +109,9 @@ body, html, main {
         justify-content: center;
     }
 
-    .sidebar-menu {
+    /*.sidebar-menu {
         display: none;
-    }
+    }*/
 
 
 };
