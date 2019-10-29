@@ -11,6 +11,10 @@ body, html, main {
     color: white;
 }
 
+body {
+    background-image: hanyu-mingzi;
+}
+
 .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/b&w-landscape.jpg);
     height: 50%;
@@ -29,16 +33,26 @@ body, html, main {
     color: white;
   }
 
-  /*nav {
-      position: fixed;
-  }*/
+nav {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    
+}
 
-  .links {
-      display: inline-block;
-      margin: 12px 20px 10px 5px;
-      position: relative;
-      list-style-type: none;
-      text-align: right;
+.links li{
+      /*display: inline-block;*/
+    margin: 12px 20px 10px 5px;
+    position: relative;
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+}
+
+  .git-link, .fa-envelope, .fa-linkedin {
+      margin-left: 8px;
+      margin-right: 25px;
+      float: right;
   }
 
   img {
@@ -52,30 +66,46 @@ body, html, main {
       background-color: white;
       border-radius: 50%;
       border: solid 0.4px white;
+      margin-right: 50px;
   }
 
-  .fas {
-      width: 40px;
-      height: 40px;
+  .fa-envelope {
+      font-size: 40px;
+      color: white;
+  }
+
+  .fa-linkedin {
+      font-size: 40px;
+      color: white;
+  }
+
+  .hanBaoBao {
+      font-size: 40px;
+      float: left;
+      display: none;
   }
 
   .bio {
       text-align: center;
-      width: 75%;
-      z-index: 1;
+      width: 1200px;
+      z-index: 2;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
   }
   
   .hanyu-mingzi {
     font-size: 40px;
     transform: rotate(-5deg)
                skew(-20deg);
-    float: right;
-    writing-mode: vertical-lr;
+    position: absolute;
+    writing-mode: vertical-rl;
     margin-top: 5px;
     font-size: 200px;
     color: rgb(222, 41, 16);
     opacity: 0.2;    
-    z-index: -1;
+    z-index: 1;
+    right: 25px;
   }
 
   .han {
@@ -89,6 +119,10 @@ body, html, main {
       font-size: 30px;
       margin-left: 50px;
       letter-spacing: 2px;
+      float: left;
+      position: fixed absolute; 
+      overflow: auto;
+      display: none;
   }
 
   .projects a {
@@ -97,28 +131,87 @@ body, html, main {
       list-style-type: none;
   }
 
-  .projects a:hover {
-      text-decoration: underline;
-      /*how to make underline thin?*/
-  }
+.projects a:hover {
+    text-decoration: underline;
+    /*how to make underline thin?*/
+}
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 599px) {
     body {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    /*.sidebar-menu {
+    .hero-img, .hero-text {
+        width: 100%;
+        height: 25%;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        top: 25%;
+    }
+
+    .bio {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .git-link, .fa-envelope, .fa-linkedin, .hanBaoBao {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .sidebar-menu {
         display: none;
-    }*/
+    }
 
-
+    .hanyu-mingzi {
+        font-size: 100px;
+    }
 };
 
-@media screen and (min-width: 420px) and (max-width: 767px) {
+/*tablet portrait*/
+@media screen and (min-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
+    .sidebar-menu {
+        display: none;
+    }
+
+    .hero-text, .hero-img {
+        width: 100%;
+        height: 40%;
+    }
+
+    .hero-text {
+        font-size: 30px;
+        height: 40%;
+    }
+};
+
+@media screen and (min-width: 900px) {
+    .sidebar-menu {
+        display: none;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    .alt-menu .hanBaoBao {
+        display: none;
+    }
+
+    .sidebar-menu {
+        display: block;
+    }
+};
 
 
 
