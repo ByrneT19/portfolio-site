@@ -4,10 +4,11 @@
 
 body, html, main {
     height: 100%;
+    min-height: 100vh;
+    width: 100%;
     margin: 0;
     background-color: black;
     font-family: 'Lato', sans-serif;
-    font-size: 30px;
     color: white;
 }
 
@@ -15,9 +16,13 @@ body {
     background-image: hanyu-mingzi;
 }
 
+main {
+    width: 100%;
+}
+
 .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/b&w-landscape.jpg);
-    height: 50%;
+    height: 25%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,12 +40,16 @@ body {
 
 nav {
     display: inline-block;
-    margin: 0;
     width: 100%;
-    
+    margin-bottom: 6px;
+    /* font-size: 0px; */
 }
 
-.links li{
+ul {
+    margin: 0px;
+}
+
+.links li {
       /*display: inline-block;*/
     margin: 12px 20px 10px 5px;
     position: relative;
@@ -53,55 +62,53 @@ nav {
       margin-left: 8px;
       margin-right: 25px;
       float: right;
-  }
-
-  img {
-      width: 100%;
-      height: 50%;
+      margin-bottom: 8px;
+      margin-top: 0px;
   }
 
   .git-link {
-      width: 40px;
-      height: 40px;
+      width: 20px;
+      height: 20px;
       background-color: white;
       border-radius: 50%;
       border: solid 0.4px white;
-      margin-right: 50px;
+      margin-right: 20px;
   }
 
   .fa-envelope {
-      font-size: 40px;
+      font-size: 20px;
       color: white;
   }
 
   .fa-linkedin {
-      font-size: 40px;
+      font-size: 20px;
       color: white;
   }
 
   .hanBaoBao {
-      font-size: 40px;
+      font-size: 20px;
       float: left;
       display: none;
   }
 
   .bio {
       text-align: center;
-      width: 1200px;
+      max-width: 1200px;
+      width: 100%;
       z-index: 2;
       position: relative;
       margin-left: auto;
       margin-right: auto;
+      font-size: 15px;
   }
   
   .hanyu-mingzi {
-    font-size: 40px;
+    font-size: 100px;
     transform: rotate(-5deg)
                skew(-20deg);
     position: absolute;
     writing-mode: vertical-rl;
     margin-top: 5px;
-    font-size: 200px;
     color: rgb(222, 41, 16);
     opacity: 0.2;    
     z-index: 1;
@@ -123,12 +130,13 @@ nav {
       position: fixed absolute; 
       overflow: auto;
       display: none;
+      list-style-type: none;
   }
 
   .projects a {
       text-decoration: none;
       color: white;
-      list-style-type: none;
+      /*list-style-type: none;*/
   }
 
 .projects a:hover {
@@ -136,87 +144,58 @@ nav {
     /*how to make underline thin?*/
 }
 
-@media screen and (max-width: 599px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .hero-img, .hero-text {
-        width: 100%;
-        height: 25%;
-    }
-
-    .hero-text {
-        font-size: 15px;
-        top: 25%;
-    }
-
-    .bio {
-        font-size: 15px;
-        width: 100%;
-    }
-
-    .git-link, .fa-envelope, .fa-linkedin, .hanBaoBao {
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
-        margin-bottom: 5px;
-    }
-
-    .sidebar-menu {
-        display: none;
-    }
-
-    .hanyu-mingzi {
-        font-size: 100px;
-    }
-};
-
-/*tablet portrait*/
 @media screen and (min-width: 600px) {
-    body {
+    main {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 100%;
-        height: 100%;
     }
 
-    .sidebar-menu {
-        display: none;
+    .fa-envelope, .fa-linkedin, .hanBaoBao {
+        font-size: 30px;
     }
 
-    .hero-text, .hero-img {
-        width: 100%;
-        height: 40%;
+    .git-link {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero-img {
+        height: 35%;
     }
 
     .hero-text {
-        font-size: 30px;
-        height: 40%;
+        font-size: 25px;
+    }
+
+    .bio {
+        font-size: 25px;
+        width: 75%;
+
+    }
+
+    .hanyu-mingzi {
+        font-size: 200px;
+        bottom: 0;
+        margin-bottom: 2px;
     }
 };
-
-@media screen and (min-width: 900px) {
-    .sidebar-menu {
-        display: none;
-    }
-}
 
 @media screen and (min-width: 1200px) {
-    .alt-menu .hanBaoBao {
+    .hero-img {
+        height: 50%;
+    }
+
+    .bio {
+        font-size: 200px;
+        width: 80%;
+    }
+
+    .hanyu-mingzi {
+        font-size: 250px;
+    }
+
+    .hanBaoBao {
         display: none;
     }
-
-    .sidebar-menu {
-        display: block;
-    }
 };
-
-
-
-
-
- 
