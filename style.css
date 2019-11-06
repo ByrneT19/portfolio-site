@@ -39,6 +39,10 @@ nav {
     width: 100%;
 }
 
+/*.desk-men {
+    display: none;
+}*/
+
 ul {
     margin: 0px;
 }
@@ -116,11 +120,7 @@ ul {
     display: block;
     text-align: left;
   }
-
-  .hanBaoBao:hover {
-    color: rgb(222, 41, 16);
-  }
-
+  
   .alt-menu a {
     float: left;
     display: block;
@@ -130,6 +130,10 @@ ul {
     text-decoration: none;
     font-size: 17px;
   }
+
+  .hanBaoBao:hover {
+    color: rgb(222, 41, 16);
+  }  
 
   .menLin {
       display: none;
@@ -226,6 +230,10 @@ ul {
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    /*.alt-menu {
+        display: none;
+    }*/
     
     .hero-img {
         height: 50%;
@@ -286,7 +294,6 @@ ul {
         width: 25%;
         height: 60%;
         z-index: 2;
-        top: 50%;
         left: 25%;
     }
   
@@ -333,6 +340,10 @@ ul {
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    /*.desk-men {
+        display: none;
+    }*/
 
     .fa-envelope, .fa-linkedin, .hanBaoBao {
         font-size: 30px;
