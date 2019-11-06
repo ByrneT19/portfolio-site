@@ -6,20 +6,28 @@
         <title>Tam Byrne: Portfolio</title>
         <meta name="description" content="Tam Byrne's Portfolio Site">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css" type="text/css">
+        
         <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/7f608568e6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     </head>
     <body>
 <header>
     <nav>
-        <ul class="links">
-           <li>
-               <div class="alt-menu">
-                   <i class="fas fa-bars hanBaoBao"></i>
-                </div>
-            </li>
+        <ul>
+            <div class="alt-menu">
+               <i type="button" class="fas fa-bars hanBaoBao"></i>
+               <div class="menu-list">
+                    <ul class="menu-boxes">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#About"></a>About Me</li>
+                    </ul>
+               </div>
+            </div>
+        </ul>
+        <ul id="links">           
             <li><a href="https://github.com/ByrneT19" target="_blank">
                 <img class="git-link" src="images/GitHub-Mark-64px.png" alt="GitHub profile link"></a>
             </li>
@@ -32,7 +40,7 @@
             <div class="hero-img">
                 <div class="hero-text">
                     <h1>Tam Byrne</h1>
-                    <p>Web Developer</p>
+                    <p>Full Stack Web Developer</p>
                 </div>
             </div>
             <div class="hanyu-mingzi">
@@ -40,27 +48,30 @@
             </div>
             <div>
                 <p class="bio">
-                I am a web developer who loves making highly responsive and beautifully designed
-                apps and websites. Outside of programming I enjoy martial arts, winemaking, learning languages,
+                I'm a full stack web developer with a passion for design who loves making highly responsive and beautifully designed
+                apps and websites, I love creating sleek, immersive content. Outside of programming I enjoy martial arts, winemaking, learning languages,
                 playing music and singing
                 </p>
             </div>
-            <div class="sidebar-menu">
-                <ul class="page-list">
-                    <div class="projects">
-                        <ul class="list-parts">
-                            <li>
-                                <a href="nav-link">Projects</a>
-                                <div class="locs"></div>
-                            </li>
-                            <li class="bio-p">
-                                <a href="#">About Me</a>
-                            </li>
-                        </ul>
-                    </div>
-            </ul>
-            </div>
             
+           
+            <a name="projects"></a>
+            <h2 class="proTy">Projects</h2>
+            <section>
+                <h3 class="proH">Learn Mandarin App</h3>
+                <img class="secImg" src="images/china-thumb-comp.jpg" alt="screenshot of Chinese learning app start page">
+                <p class="secPar">A Chinese learning app for beginners to learn some basic Mandarin phrases and characters. Utilises 
+                HTML, CSS and jQuery/JavaScript.
+                </p> 
+                    <div class="secLin"><a class="secTag" href="https://github.com/ByrneT19/Quiz_App.git">Repo</a> |
+                        <a class="secTag" href="https://byrnet19.github.io/Quiz_App/">Live Link</a>
+                    </div>
+            </section>
+            <div class="all-about">
+                <a name="about"></a>
+                <h2>About Me</h2>
+                <p class="about-p">hhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            </div>
         </main>
             
         <script src="event.js" type="text/javascript"></script>
