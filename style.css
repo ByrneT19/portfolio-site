@@ -98,6 +98,7 @@ ul {
       color: white;
   }
 
+  .alt-menu a:not(:first-child) {display: none;}
   .alt-menu a.icon {
     float: left;
     display: block;
