@@ -104,15 +104,15 @@ ul {
 
   .alt-menu a:not(:first-child) {display: none;}
   .alt-menu a.icon {
-    /* float: left;  */
+    float: left;   
     display: block;
   }
 
   .alt-menu.responsive {position: relative;}
   .alt-menu.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
+    /* right: 0; */
+    /* top: 0; */
   }
 
   .alt-menu.responsive a {
@@ -126,11 +126,15 @@ ul {
     display: block;
     color: white;
     background-color: black;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px;
+  }
+
+  .proLink, .aboutLink {
+      border: 1px solid white;
   }
 
   .hanBaoBao:hover {
@@ -234,9 +238,9 @@ ul {
         justify-content: flex-start;
     }
 
-    /*.alt-menu {
+    .alt-menu {
         display: none;
-    }*/
+    }
     
     .hero-img {
         height: 50%;
@@ -388,5 +392,7 @@ ul {
         font-size: 20px;
         text-align: center;
     }
+
+    
 }
 
