@@ -135,6 +135,7 @@ ul {
 
   .hanBaoBao:hover {
     color: rgb(222, 41, 16);
+    border: none;
   }  
 
   .menLin {

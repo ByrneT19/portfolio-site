@@ -5,25 +5,8 @@ function menuShow() {
     } else {
         x.className = 'alt-menu';
     }
+    $('.con-icon').toggle();
 };
 
-function menuClick() {
-  $('this').on('click', function() {
-    $('.hanBaoBao').hide();
-  })
-}
 
-function menuItemsHide() {
-  $('.proLink', '.aboutLink').on('click', function() {
-    $('this').hide();
-    $('.hanBaoBao').show();
-  })
-}
 
-function pageLoad() {
-  menuShow();
-  menuClick();
-  menuItemsHide();
-}
-
-$(pageLoad);
