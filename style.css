@@ -98,7 +98,7 @@ ul {
 
   .hanBaoBao {
       font-size: 20px;
-      float: left;
+      /* float: left; */
       color: white;
   }
 
@@ -260,10 +260,6 @@ ul {
         font-size: 40px;
     }
 
-    /*.menu-boxes {
-        display: inline-block;        
-    }*/
-
     .menLin {
         display: inline-block;
         color: white;
@@ -302,6 +298,7 @@ ul {
         height: 60%;
         z-index: 2;
         left: 25%;
+        display: block;
     }
   
     .proH {
