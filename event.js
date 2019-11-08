@@ -7,13 +7,6 @@ function menuShow() {
         x.className = 'alt-menu';
     }
     $('.con-icon').toggle();
-    $('.icon').on('click', function() {
-        if ($(this).css('border', 'none')) {
-            $(this).css('border', '1px solid white');
-        } else {
-            $(this).css('border', 'none');
-        } 
-    });
  }
 
 
