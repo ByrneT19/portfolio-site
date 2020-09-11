@@ -255,6 +255,7 @@ ul {
 
     .hero-text {
         font-size: 35px;
+        position: absolute;
     }
 
     .bio {
